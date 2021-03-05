@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "otf";
+    src: url("/font/A-OTF-GothicMB101Pro-DeBold.otf");
+}
+
+@font-face {
+    font-family: "otf_small";
+    src: url("/font/A-OTF-GothicMB101Pro-Reg.otf");
+}
+
+@font-face {
+    font-family: "din";
+    src: url("/font/din1451alt.ttf");
+}
+
+.letterspacing20px {
+    letter-spacing: 30px;
+}
+
+.letterspacing13px {
+    letter-spacing: 10px;
+}
+
+.letterspacing3px {
+    letter-spacing: 3px;
+}
+
+/*タイトルはじめ*/
+.wrapper {
+    /*    コンテンツが収まるようなサイズを指定*/
+    width: 337px;
+    height: 254px;
+
+    /*    この線はpositionの仕組みをわかりやすくするための線*/
+    border: 1px solid;
+
+    /*    親要素をrerativeにして基準にする*/
+    position: absolute;
+}
+
+.child1 {
+    /*    子要素の配置を基準からの距離で指定できるようにabsoluteにする*/
+    position: absolute;
+
+    font-size: 21px;
+
+    /*    親要素の下から40px右から50pxのところに配置する*/
+    bottom: -10px;
+    right: -0px;
+    color: lightgray;
+
+    /*    行の高さ（文字の高さ）を指定してあげている。*/
+    /*    何も指定しない時の行の高さ（デフォルト値）だと*/
+    /*    「what About movie?」とINTRODUCTIONの間が開いてしまうので改めて指定*/
+    line-height: 40px;
+    font-family: "din";
+    color: #00001F;
+    opacity: 0.2;
+}
+
+/*.child1の中の.small要素に適用するcss*/
+.child1 > .small {
+    font-size: 20px;
+}
+
+.child2 {
+    /*    子要素の配置を基準からの距離で指定できるようにabsoluteにする*/
+    position: absolute;
+    font-size: 309px;
+
+    /*    親要素の下から50px右から50pxのところに配置する*/
+    right: -50px;
+    top: -65px;
+
+    color: lightgray;
+    font-family: "din";
+    color: #00001F;
+    opacity: 0.2;
+}
+
+.toph2 {
+    position: absolute;
+    font-size: 55.31px;
+    top: 0;
+    left: 0px;
+    font-family: "otf";
+    line-height: 90px;
+    color: #00001F;
+}
+
+/*タイトル終わり*/
+
+
+/*top*/
+.top {
+    width: 100%;
+    height: 900px;
+    border: 1px solid;
+    position: relative;
+}
+
+.title {
+    position: absolute;
+    left: 70px;
+    top: 150px;
+}
+
+nav {
+    position: absolute;
+    right: 60px;
+    top: 90px;
+    text-align: center;
+    font-family: "din";
+    font-size: 20px;
+
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    width: 18%;
+    min-width: 120px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #00001F;
+}
+
+nav ul li.current a {
+    color: #00001F;
+}
+
+nav ul li a:hover {
+    color: #00001F;
+}
+
+.image_top {
+    position: absolute;
+    right: -1px;
+    top: 200px;
+    z-index: -1;
+}
+
+.intro {
+    position: absolute;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: right;
+    top: 680px;
+    right: 130px;
+    font-family: "otf_small";
+}
+
+#chart {
+    height: 550px;
+    border: 1px solid;
+
+    text-align: center;
+}
+
+.bg_moji {
+    margin: 0 auto;
+    width: 310px;
+    position: relative;
+}
+
+.charth2 {
+    font-size: 309px;
+    font-family: "din";
+    color: #00001F;
+    opacity: 0.2;
+    position: absolute;
+}
+
+.chartp {
+    font-size: 142px;
+    font-family: din;
+    color: #00001F;
+    opacity: 0.2;
+    position: absolute;
+    top: 270px;
+}
+
+.image_chart {
+    position: absolute;
+    top: 130px;
+    right: -81px;
+}
+
+.chart_botton {
+    position: absolute;
+    top: 440px;
+    left: 30px;
+    border: 100px;
+    border-right: 20%;
+
+
+}
+
+.chart_botton a {
+    text-decoration: none;
+    font-size: 40px;
+    font-family: "otf"
+        text-decoration: none;
+    background: #00001f;
+    /*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 6px #627295;
+    border-radius: 20px;
+    font-family: "otf";
+    padding: 0.5em 1em;
+}
+
+
+.kaijo {
+    position: static;
+}
+
+#intro {
+    width: 100%;
+    height: 2062px;
+    border: 1px solid;
+    position: relative;
+}
+
+.contents {
+    width: 722px;
+    height: 340px;
+    top: 20px;
+    border: 1px solid;
+    position: absolute;
+    
+    right: 60px;
+}
+
+.introh2 {
+    position: absolute;
+    font-size: 50px;
+    font-family: "otf";
+    line-height: 90px;
+    color: #00001F;
+    bottom: -20px;
+    right: -20px;
+}
+
+.c1 {
+    position: absolute;
+
+    font-size: 21px;
+
+    /*    親要素の下から40px右から50pxのところに配置する*/
+    bottom: 80px;
+    left :157px;
+    color: lightgray;
+
+    /*    行の高さ（文字の高さ）を指定してあげている。*/
+    /*    何も指定しない時の行の高さ（デフォルト値）だと*/
+    /*    「what About movie?」とINTRODUCTIONの間が開いてしまうので改めて指定*/
+    line-height: 40px;
+    font-family: "din";
+    color: #00001F;
+    opacity: 0.2;
+}
+
+.c2 {
+    position: absolute;
+    font-size: 309px;
+
+    /*    親要素の下から50px右から50pxのところに配置する*/
+    right: -23px;
+    top: -40px;
+
+    color: lightgray;
+    font-family: "din";
+    color: #00001F;
+    opacity: 0.2;
+}
+
+.c3 {
+    font-size: 80px;
+    font-family: din;
+    color: #00001f;
+    opacity: 0.2;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.intro_bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:298px;
+}
+
+.intro_word{
+        position: absolute;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: left;
+    left: 65px;
+    top:555px;
+    font-family: "otf_small";
+    color: #ffffff;
+}
+
+.intro_janru{
+      position: absolute;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: left;
+    left: 65px;
+    top:760px;
+    font-family: "otf_small";
+    color: #ffffff;
+}
+
+.intro_movie{
+    margin:  0 auto;
+    position: absolute;
+    border: 1px solid white;
+    width: 785px;
+    height: 895px;
+    top:886px;
+    right: 10%;
+    left: 10%;
+    
+}
