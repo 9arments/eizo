@@ -18,16 +18,16 @@
     src: url("/font/din1451alt.ttf");
 }
 
-.letterspacing20px {
-    letter-spacing: 30px;
+.letterspacing-l {
+    letter-spacing: 0.1em;
 }
 
-.letterspacing13px {
-    letter-spacing: 10px;
+.letterspacing-m {
+    letter-spacing: 0.1em;
 }
 
-.letterspacing3px {
-    letter-spacing: 3px;
+.letterspacing-s {
+    letter-spacing: 0.1em;
 }
 
 /*タイトルはじめ*/
@@ -85,7 +85,7 @@
 
 .toph2 {
     position: absolute;
-    font-size: 55.31px;
+    font-size: 255%;
     top: 0;
     left: 0px;
     font-family: "otf";
@@ -106,7 +106,7 @@
 
 .title {
     position: absolute;
-    left: 70px;
+    left: 5%;
     top: 150px;
 }
 
@@ -150,6 +150,8 @@ nav ul li a:hover {
     right: -1px;
     top: 200px;
     z-index: -1;
+    width: 1024px;
+    height: 500px;
 }
 
 .intro {
@@ -211,8 +213,8 @@ nav ul li a:hover {
 .chart_botton a {
     text-decoration: none;
     font-size: 40px;
-    font-family: "otf"
-        text-decoration: none;
+    font-family: "otf";
+    text-decoration: none;
     background: #00001f;
     /*ボタン色*/
     color: #FFF;
@@ -235,23 +237,23 @@ nav ul li a:hover {
 }
 
 .contents {
-    width: 722px;
-    height: 340px;
+    width: 43em;
+    height: 17%;
     top: 20px;
     border: 1px solid;
     position: absolute;
-    
+
     right: 60px;
 }
 
 .introh2 {
     position: absolute;
-    font-size: 50px;
+    font-size: 330%;
     font-family: "otf";
     line-height: 90px;
     color: #00001F;
-    bottom: -20px;
-    right: -20px;
+    bottom: -5%;
+    right: -2%;
 }
 
 .c1 {
@@ -261,7 +263,7 @@ nav ul li a:hover {
 
     /*    親要素の下から40px右から50pxのところに配置する*/
     bottom: 80px;
-    left :157px;
+    left: 157px;
     color: lightgray;
 
     /*    行の高さ（文字の高さ）を指定してあげている。*/
@@ -278,7 +280,7 @@ nav ul li a:hover {
     font-size: 309px;
 
     /*    親要素の下から50px右から50pxのところに配置する*/
-    right: -23px;
+    right: 0.5%;
     top: -40px;
 
     color: lightgray;
@@ -297,43 +299,126 @@ nav ul li a:hover {
     right: 10px;
 }
 
-.intro_bg{
+.intro_bg {
     position: absolute;
     width: 100%;
     height: 100%;
-    top:298px;
+    top: 298px;
+    z-index: -1;
 }
 
-.intro_word{
-        position: absolute;
+.intro_bg_sp {
+    display: none;
+    position: absolute;
+    z-index: -1;
+}
+
+.intro_word {
+    position: absolute;
     font-size: 16px;
     line-height: 40px;
     text-align: left;
     left: 65px;
-    top:555px;
+    top: 555px;
     font-family: "otf_small";
     color: #ffffff;
 }
 
-.intro_janru{
-      position: absolute;
+.intro_janru {
+    position: absolute;
     font-size: 30px;
     line-height: 40px;
     text-align: left;
     left: 65px;
-    top:760px;
+    top: 760px;
     font-family: "otf_small";
     color: #ffffff;
 }
 
-.intro_movie{
-    margin:  0 auto;
+.intro_movie {
+    margin: 0 auto;
     position: absolute;
     border: 1px solid white;
-    width: 785px;
+    width: 90;
     height: 895px;
-    top:886px;
+    top: 886px;
     right: 10%;
     left: 10%;
+
+}
+
+
+.intro_movie{
+    color: #fff;
+}
+
+
+
+@media (max-width: 450px) {
+    .mokuji {
+        display: none;
+    }
+
+
+
+
+    .contents {
+        display: none;
+    }
+
+    .intro_bg {
+        position: absolute;
+        width: 250%;
+        height: 50%;
+    }
+
+    .intro {
+
+        font-size: 13px;
+        line-height: 20px;
+        text-align: center;
+        margin: 0 auto;
+        font-family: "otf_small";
+        padding: 10%;
+        right: auto;
+    }
+
+    .image_chart {
+        width: 100%;
+        right: 0px;
+        top: 200px;
+    }
+
+    .intro_word {
+        text-align: center;
+        padding: 10%;
+        right: auto;
+        left: auto;
+        font-size: 13px;
+        top:340px;
+    }
+
+    .intro_bg {
+        display: none;
+    }
+
+    .intro_bg_sp{
+        display: initial;
+        position: absolute;
+      width: 100%;
+        height: 60%;
+        top: 130px;
+    }
+    
+    .intro_janru{
+        top:600px;
+        padding: auto;
+        left: 70px;
+    }
+    
+    .intro_movie{
+       top: 500px; 
+    }
+    
     
 }
