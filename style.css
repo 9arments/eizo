@@ -30,6 +30,11 @@
     letter-spacing: 0.1em;
 }
 
+.letterspacing-l {
+    letter-spacing: 0.2em;
+}
+
+
 /*タイトルはじめ*/
 .wrapper {
     /*    コンテンツが収まるようなサイズを指定*/
@@ -302,7 +307,7 @@ nav ul li a:hover {
 .intro_bg {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 90%;
     top: 298px;
     z-index: -1;
 }
@@ -338,7 +343,7 @@ nav ul li a:hover {
 .intro_movie {
     margin: 0 auto;
     position: absolute;
-    border: 1px solid white;
+
     width: 90;
     height: 895px;
     top: 886px;
@@ -348,8 +353,151 @@ nav ul li a:hover {
 }
 
 
-.intro_movie{
+.intro_movie {
     color: #fff;
+}
+
+.janru_1 {
+    width: 100%;
+    height: 25%;
+
+    padding-bottom: 120px;
+}
+
+.img {
+    float: left;
+    width: 49%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.janru_mg {
+    text-align: right;
+
+
+    width: 49%;
+
+    float: left;
+    padding-top: -1%;
+    font-size: 100%;
+    margin-left: 1.6%;
+    border-radius: 4%;
+}
+
+
+
+
+.janru_title {
+    font-family: "otf";
+}
+
+.janru_subtitle {
+    font-size: 1em;
+    font-family: "din";
+}
+
+.janru_p {
+    padding-top: 40px;
+    font-size: 90%;
+    font-family: "otf_small";
+}
+
+
+
+.janru_vfx {
+    text-align: left;
+
+    width: 49%;
+
+    float: right;
+    padding-top: -1%;
+    font-size: 100%;
+    margin-right: 1.6%;
+}
+
+.img_vfx {
+    float: right;
+    width: 49%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.tools {
+
+    width: 100%;
+    height: 555px;
+    border: 1px solid;
+    position: relative;
+    text-align: center;
+}
+
+
+.tools img {
+    border-radius: 10%;
+}
+
+.tools h3 {
+    padding: 60px 70px 10px 60px;
+    width: 100%;
+    color: #00001f;
+
+    font-size: 30px;
+    line-height: 40px;
+    text-align: left;
+    left: 65px;
+    top: 76px;
+    font-family: "otf_small";
+
+}
+
+.skill {
+    text-align: center;
+}
+
+.skill-box {
+    width: 20%;
+    height: 448px;
+    border: 1px solid;
+    text-align: center;
+}
+
+.skill-title {
+    font-family: "otf";
+    font-size: 20px;
+    height: 30px;
+
+}
+
+.skill-subtitle {
+    font-family: "din";
+    font-size: 17px;
+
+}
+
+
+.skill-setumei {
+    font-size: 13px;
+    font-family: "otf_small";
+    text-align: left;
+    padding-left: 10px;
+    line-height: 20px;
+}
+
+
+.container {
+    padding-top: 5%;
+    padding-left: 4%;
+    padding-right: 2%;
+    display: flex;
+
+    width: 90%;
+    border: 1px solid;
+
+}
+
+.item {
+    padding: 7%;
 }
 
 
@@ -395,30 +543,84 @@ nav ul li a:hover {
         right: auto;
         left: auto;
         font-size: 13px;
-        top:340px;
+        top: 150px;
     }
 
     .intro_bg {
         display: none;
     }
 
-    .intro_bg_sp{
+    .intro_bg_sp {
         display: initial;
         position: absolute;
-      width: 100%;
+        width: 100%;
         height: 60%;
-        top: 130px;
+        top: 10px;
+    }
+
+
+
+    .intro_janru {
+        position: absolute;
+        font-size: 30px;
+        line-height: 40px;
+        text-align: left;
+        left: 72px;
+
+        top: 400px;
+        font-family: "otf_small";
+        color: #ffffff;
+    }
+
+    .janru_1 {
+        display: none;
+    }
+
+    .janru_1_sp{
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        top: -400px;
+    }
+
+    .img_sp {
+
+        width: 90%;
+    }
+
+    .janru_mg_sp {
+        text-align: center;
+    }
+
+    .janru_p_sp {
+        width: 100%;
+        text-align: center;
+        font-family: "otf_small";
+        font-size: 13px;
+        padding-top: 20px;
     }
     
-    .intro_janru{
-        top:600px;
-        padding: auto;
-        left: 70px;
+    .janru_subtitle{
+        padding-bottom: 10px;
+    }
+
+    
+        .janru_2_sp{
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        top: -00px;
     }
     
-    .intro_movie{
-       top: 500px; 
+     .janru_3_sp{
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        top:400px;
     }
-    
-    
+
+
+
+
+
 }
