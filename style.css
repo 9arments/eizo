@@ -500,6 +500,15 @@ nav ul li a:hover {
     padding: 7%;
 }
 
+.janru_1_sp{
+    display: none;
+}.janru_2_sp{
+    display: none;
+}.janru_3_sp{
+    display: none;
+}
+
+
 
 
 @media (max-width: 450px) {
@@ -508,7 +517,76 @@ nav ul li a:hover {
     }
 
 
+    
+    .title{
+        top: 20px;
+    }
+.wrapper {
+    /*    コンテンツが収まるようなサイズを指定*/
+    width: 337px;
+    height: 254px;
 
+    /*    この線はpositionの仕組みをわかりやすくするための線*/
+    border: 1px solid;
+
+    /*    親要素をrerativeにして基準にする*/
+    position: absolute;
+}
+
+.child1 {
+    /*    子要素の配置を基準からの距離で指定できるようにabsoluteにする*/
+    position: absolute;
+
+    font-size: 21px;
+
+    /*    親要素の下から40px右から50pxのところに配置する*/
+    bottom: -10px;
+    right: -0px;
+    color: lightgray;
+
+    /*    行の高さ（文字の高さ）を指定してあげている。*/
+    /*    何も指定しない時の行の高さ（デフォルト値）だと*/
+    /*    「what About movie?」とINTRODUCTIONの間が開いてしまうので改めて指定*/
+    line-height: 40px;
+    font-family: "din";
+    color: #00001F;
+    opacity: 0.2;
+}
+
+/*.child1の中の.small要素に適用するcss*/
+.child1 {
+    font-size: 10px;
+    left:135px;
+    bottom:30px;
+}
+
+.child2 {
+    /*    子要素の配置を基準からの距離で指定できるようにabsoluteにする*/
+    position: absolute;
+    font-size: 200px;
+
+    /*    親要素の下から50px右から50pxのところに配置する*/
+    left: 20px;
+    top: 10px;
+
+    color: lightgray;
+    font-family: "din";
+    color: #00001F;
+    opacity: 0.2;
+}
+
+.toph2 {
+    position: absolute;
+    font-size: 245%;
+    top: 50px;
+    left: 0px;
+    font-family: "otf";
+    line-height: 55px;
+    color: #00001F;
+}
+    
+    
+    
 
     .contents {
         display: none;
@@ -543,7 +621,7 @@ nav ul li a:hover {
         right: auto;
         left: auto;
         font-size: 13px;
-        top: 150px;
+        top: 250px;
     }
 
     .intro_bg {
@@ -554,8 +632,8 @@ nav ul li a:hover {
         display: initial;
         position: absolute;
         width: 100%;
-        height: 60%;
-        top: 10px;
+        height: 86%;
+        top: 100px;
     }
 
 
@@ -567,7 +645,7 @@ nav ul li a:hover {
         text-align: left;
         left: 72px;
 
-        top: 400px;
+        top: 500px;
         font-family: "otf_small";
         color: #ffffff;
     }
@@ -577,10 +655,11 @@ nav ul li a:hover {
     }
 
     .janru_1_sp{
+        display: initial;
         position: absolute;
         width: 100%;
         text-align: center;
-        top: -400px;
+        top: -300px;
     }
 
     .img_sp {
@@ -606,17 +685,19 @@ nav ul li a:hover {
 
     
         .janru_2_sp{
+            display: initial;
         position: absolute;
         width: 100%;
         text-align: center;
-        top: -00px;
+        top: 100px;
     }
     
      .janru_3_sp{
+         display: initial;
         position: absolute;
         width: 100%;
         text-align: center;
-        top:400px;
+        top:500px;
     }
 
 
