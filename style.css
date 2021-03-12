@@ -79,7 +79,7 @@
     font-size: 309px;
 
     /*    親要素の下から50px右から50pxのところに配置する*/
-    right: -50px;
+    right: -80px;
     top: -65px;
 
     color: lightgray;
@@ -242,7 +242,7 @@ nav ul li a:hover {
 }
 
 .contents {
-    width: 43em;
+    width: 50%;
     height: 17%;
     top: 20px;
     border: 1px solid;
@@ -344,7 +344,7 @@ nav ul li a:hover {
     margin: 0 auto;
     position: absolute;
 
-    width: 90;
+    width: 80%;
     height: 895px;
     top: 886px;
     right: 10%;
@@ -426,7 +426,7 @@ nav ul li a:hover {
 .tools {
 
     width: 100%;
-    height: 555px;
+    height: 805px;
     border: 1px solid;
     position: relative;
     text-align: center;
@@ -438,14 +438,16 @@ nav ul li a:hover {
 }
 
 .tools h3 {
-    padding: 60px 70px 10px 60px;
-    width: 100%;
+    /*    padding: 60px 70px 10px 60px;*/
+    padding-left: 6px;
+    padding-top: 70px;
+    width: 90%;
     color: #00001f;
 
     font-size: 30px;
     line-height: 40px;
     text-align: left;
-    left: 65px;
+
     top: 76px;
     font-family: "otf_small";
 
@@ -496,19 +498,198 @@ nav ul li a:hover {
 
 }
 
+.container2{
+    display: none;
+}
+
 .item {
     padding: 7%;
 }
 
-.janru_1_sp{
-    display: none;
-}.janru_2_sp{
-    display: none;
-}.janru_3_sp{
+.janru_1_sp {
     display: none;
 }
 
+.janru_2_sp {
+    display: none;
+}
 
+.janru_3_sp {
+    display: none;
+}
+
+#system {
+
+    width: 100%;
+    height: 700px;
+    border: 1px solid;
+    position: relative;
+    text-align: center;
+}
+
+.tools_title {
+    width: auto;
+}
+
+.d2 {
+    position: absolute;
+    font-size: 309px;
+
+    /*    親要素の下から50px右から50pxのところに配置する*/
+    left: -10px;
+    ;
+    top: -90px;
+
+    color: lightgray;
+    font-family: "din";
+    color: #00001F;
+    opacity: 0.2;
+}
+
+.d3 {
+    font-size: 80px;
+    font-family: din;
+    color: #00001f;
+    opacity: 0.2;
+    position: absolute;
+    bottom: 70px;
+    left: auto;
+}
+
+.contents2 {
+    width: 50%;
+    height: 50%;
+    top: 20px;
+    border: 1px solid;
+    position: absolute;
+
+    left: 60px;
+}
+
+.system2 {
+    position: absolute;
+    font-size: 330%;
+    font-family: "otf";
+    line-height: 90px;
+    color: #00001F;
+    bottom: 15%;
+    right: -%;
+}
+
+.img_system {
+    position: absolute;
+    left: 0;
+    top: 300px;
+}
+
+.img_system2 {
+    position: absolute;
+    : 0;
+
+}
+
+.systemh3 {
+    position: absolute;
+    text-align: right;
+
+    width: 49%;
+
+    float: right;
+    padding-top: -1%;
+    font-size: 100%;
+    margin-right: 10%;
+    font-family: "otf";
+    right: 0;
+    top: 70%
+}
+
+#create {
+    position: relative;
+
+    width: 100%;
+    height: 500px;
+
+
+}
+
+.img_create {
+    position: absolute;
+    top: 0;
+    z-index: -65;
+}
+
+.contents3 {
+    text-align: center;
+    width: 100%;
+    height: 300px;
+    padding: 10% 0%;
+    border: 1px solid;
+
+}
+
+
+.e2 {
+    font-size: 309px;
+    height: 250px;
+    margin: 0 auto;
+    color: lightgray;
+    font-family: "din";
+    color: #ffffff;
+    opacity: 0.2;
+}
+
+.e3 {
+    padding-top: 30px;
+    font-size: 80px;
+    height: 30px;
+    font-family: "din";
+    color: #ffffff;
+    opacity: 0.2;
+
+
+}
+
+.create2 {
+    font-size: 330%;
+    font-family: "otf";
+    top: 32%;
+    color: #ffffff;
+
+
+
+
+}
+
+
+.create_text {
+    width: 100%;
+    text-align: center;
+}
+
+.createh2 {
+    padding-top: 20px;
+    color: #ffffff;
+    font-size: 15px;
+
+}
+
+
+.link {
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+    text-align: center;
+
+}
+
+.footer {
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+    padding-top: 200px;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+}
 
 
 @media (max-width: 450px) {
@@ -517,76 +698,77 @@ nav ul li a:hover {
     }
 
 
-    
-    .title{
+
+    .title {
         top: 20px;
     }
-.wrapper {
-    /*    コンテンツが収まるようなサイズを指定*/
-    width: 337px;
-    height: 254px;
 
-    /*    この線はpositionの仕組みをわかりやすくするための線*/
-    border: 1px solid;
+    .wrapper {
+        /*    コンテンツが収まるようなサイズを指定*/
+        width: 337px;
+        height: 254px;
 
-    /*    親要素をrerativeにして基準にする*/
-    position: absolute;
-}
+        /*    この線はpositionの仕組みをわかりやすくするための線*/
+        border: 1px solid;
 
-.child1 {
-    /*    子要素の配置を基準からの距離で指定できるようにabsoluteにする*/
-    position: absolute;
+        /*    親要素をrerativeにして基準にする*/
+        position: absolute;
+    }
 
-    font-size: 21px;
+    .child1 {
+        /*    子要素の配置を基準からの距離で指定できるようにabsoluteにする*/
+        position: absolute;
 
-    /*    親要素の下から40px右から50pxのところに配置する*/
-    bottom: -10px;
-    right: -0px;
-    color: lightgray;
+        font-size: 21px;
 
-    /*    行の高さ（文字の高さ）を指定してあげている。*/
-    /*    何も指定しない時の行の高さ（デフォルト値）だと*/
-    /*    「what About movie?」とINTRODUCTIONの間が開いてしまうので改めて指定*/
-    line-height: 40px;
-    font-family: "din";
-    color: #00001F;
-    opacity: 0.2;
-}
+        /*    親要素の下から40px右から50pxのところに配置する*/
+        bottom: -10px;
+        right: -0px;
+        color: lightgray;
 
-/*.child1の中の.small要素に適用するcss*/
-.child1 {
-    font-size: 10px;
-    left:135px;
-    bottom:30px;
-}
+        /*    行の高さ（文字の高さ）を指定してあげている。*/
+        /*    何も指定しない時の行の高さ（デフォルト値）だと*/
+        /*    「what About movie?」とINTRODUCTIONの間が開いてしまうので改めて指定*/
+        line-height: 40px;
+        font-family: "din";
+        color: #00001F;
+        opacity: 0.2;
+    }
 
-.child2 {
-    /*    子要素の配置を基準からの距離で指定できるようにabsoluteにする*/
-    position: absolute;
-    font-size: 200px;
+    /*.child1の中の.small要素に適用するcss*/
+    .child1 {
+        font-size: 10px;
+        left: 135px;
+        bottom: 30px;
+    }
 
-    /*    親要素の下から50px右から50pxのところに配置する*/
-    left: 20px;
-    top: 10px;
+    .child2 {
+        /*    子要素の配置を基準からの距離で指定できるようにabsoluteにする*/
+        position: absolute;
+        font-size: 200px;
 
-    color: lightgray;
-    font-family: "din";
-    color: #00001F;
-    opacity: 0.2;
-}
+        /*    親要素の下から50px右から50pxのところに配置する*/
+        left: 20px;
+        top: 10px;
 
-.toph2 {
-    position: absolute;
-    font-size: 245%;
-    top: 50px;
-    left: 0px;
-    font-family: "otf";
-    line-height: 55px;
-    color: #00001F;
-}
-    
-    
-    
+        color: lightgray;
+        font-family: "din";
+        color: #00001F;
+        opacity: 0.2;
+    }
+
+    .toph2 {
+        position: absolute;
+        font-size: 245%;
+        top: 50px;
+        left: 0px;
+        font-family: "otf";
+        line-height: 55px;
+        color: #00001F;
+    }
+
+
+
 
     .contents {
         display: none;
@@ -632,7 +814,7 @@ nav ul li a:hover {
         display: initial;
         position: absolute;
         width: 100%;
-        height: 86%;
+        height: 100%;
         top: 100px;
     }
 
@@ -642,8 +824,8 @@ nav ul li a:hover {
         position: absolute;
         font-size: 30px;
         line-height: 40px;
-        text-align: left;
-        left: 72px;
+        text-align: center;
+        left: 85px;
 
         top: 500px;
         font-family: "otf_small";
@@ -654,7 +836,7 @@ nav ul li a:hover {
         display: none;
     }
 
-    .janru_1_sp{
+    .janru_1_sp {
         display: initial;
         position: absolute;
         width: 100%;
@@ -678,30 +860,230 @@ nav ul li a:hover {
         font-size: 13px;
         padding-top: 20px;
     }
-    
-    .janru_subtitle{
+
+    .janru_subtitle {
         padding-bottom: 10px;
     }
 
-    
-        .janru_2_sp{
-            display: initial;
+
+    .janru_2_sp {
+        display: initial;
         position: absolute;
         width: 100%;
         text-align: center;
         top: 100px;
     }
-    
-     .janru_3_sp{
-         display: initial;
+
+    .janru_3_sp {
+        display: initial;
         position: absolute;
         width: 100%;
         text-align: center;
-        top:500px;
+        top: 500px;
     }
 
+    #intro {
+        width: 100%;
+        height: 1800px;
+        border: 1px solid;
+        position: relative;
+    }
 
+    .tools {
+        width: 100%;
+        height: 555px;
+        border: 1px solid;
+        position: relative;
+        text-align: center;
+    }
 
+    .tools h3 {
+        /*    padding: 60px 70px 10px 60px;*/
+        padding-left: 20px;
+        padding-top: 50px;
+        width: 90%;
+        color: #00001f;
 
+        font-size: 20px;
+        line-height: 40px;
+        text-align: center;
+
+        top: 76px;
+        font-family: "otf_small";
+
+    }
+
+    .skill-title{
+        font-size: 10px;
+    }
+
+    .container{
+display: none;
+    }
+    
+    
+    
+    
+    .container2{
+        display: initial;
+        position: relative;
+    }
+    
+    .sp_tools_1{
+        position: relative;
+    }
+    
+    .img_sp_tool_1{
+        position: absolute;
+        left: 5%;
+}
+    .sp_tools_title_1{
+         position: absolute;
+       left: 45%;
+        top:11%;
+        font-size: 18px;
+    }
+    
+    .sp_tools_sub_1{
+        font-size:4px;
+        position: absolute;
+        top:20px;
+        right: 13%;
+    }
+   .sp_tool_p_1{
+        position: absolute;
+        font-size: 10px;
+      
+       top:40px;
+       right: 40px;
+        text-align: left;
+    }
+  
+    
+      .sp_tools_2{
+        position: relative;
+    }
+    
+    .img_sp_tool_2{
+        position: absolute;
+        left: 5%;
+        top:150px;
+}
+    .sp_tools_title_2{
+         position: absolute;
+       left: 59%;
+        top:150px;
+        font-size: 18px;
+    }
+    
+    .sp_tools_sub_2{
+        font-size:4px;
+        position: absolute;
+        top:170px;
+        right: 13%;
+    }
+   .sp_tool_p_2{
+        position: absolute;
+        font-size: 10px;
+      
+       top:190px;
+       right: 40px;
+        text-align: left;
+    }
+   
+     .sp_tools_3{
+        position: relative;
+    }
+    
+    .img_sp_tool_3{
+        position: absolute;
+        left: 5%;
+        top:300px;
+}
+    .sp_tools_title_3{
+         position: absolute;
+       left: 64%;
+        top:300px;
+        font-size: 18px;
+    }
+    
+    .sp_tools_sub_3{
+        font-size:4px;
+        position: absolute;
+        top:320px;
+        right: 13%;
+    }
+   .sp_tool_p_3{
+        position: absolute;
+        font-size: 10px;
+      
+       top:350px;
+       right: 40px;
+        text-align: left;
+    }
+    
+    
+    .systemh3{
+        text-align: center;
+        font-size: 10px;
+        right:70px;
+    }
+    
+    .img_system{
+        width:100%;
+    }
+    
+    .system2{
+        font-size: 40px;
+        left: 20px;
+    }
+    .contents2{
+        width: 80%;
+        left: 25px;
+    }
+    
+    .img_system2{
+        display: none;
+    }
+    
+    #create{
+        height: 500px;
+    }
+    .img_create{
+        height: 150%;
+    }
+    
+    
+    .create2{
+        display: none;
+    }
+    
+    .e2{
+        padding-top: 40px
+    }
+    .e3{
+       font-size: 40px;
+    }
+    
+    .createh2{
+        padding-top: 60px;
+        font-size: 10px;
+    }
+    
+    .if{
+        height: 40%;
+    }
+    
+    .footer{
+        top: 100px;
+    }
+    
+   
+
+}
+
+   
+    
+    
 
 }
