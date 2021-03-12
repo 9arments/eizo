@@ -35,6 +35,14 @@
 }
 
 
+
+#modalBtn{
+    z-index: 10;
+}
+
+
+
+
 /*タイトルはじめ*/
 .wrapper {
     /*    コンテンツが収まるようなサイズを指定*/
@@ -42,7 +50,7 @@
     height: 254px;
 
     /*    この線はpositionの仕組みをわかりやすくするための線*/
-    border: 1px solid;
+
 
     /*    親要素をrerativeにして基準にする*/
     position: absolute;
@@ -105,7 +113,8 @@
 .top {
     width: 100%;
     height: 900px;
-    border: 1px solid;
+
+
     position: relative;
 }
 
@@ -171,7 +180,7 @@ nav ul li a:hover {
 
 #chart {
     height: 550px;
-    border: 1px solid;
+
 
     text-align: center;
 }
@@ -237,7 +246,7 @@ nav ul li a:hover {
 #intro {
     width: 100%;
     height: 2062px;
-    border: 1px solid;
+    
     position: relative;
 }
 
@@ -245,7 +254,7 @@ nav ul li a:hover {
     width: 50%;
     height: 17%;
     top: 20px;
-    border: 1px solid;
+
     position: absolute;
 
     right: 60px;
@@ -427,7 +436,7 @@ nav ul li a:hover {
 
     width: 100%;
     height: 805px;
-    border: 1px solid;
+
     position: relative;
     text-align: center;
 }
@@ -460,7 +469,7 @@ nav ul li a:hover {
 .skill-box {
     width: 20%;
     height: 448px;
-    border: 1px solid;
+
     text-align: center;
 }
 
@@ -494,7 +503,7 @@ nav ul li a:hover {
     display: flex;
 
     width: 90%;
-    border: 1px solid;
+ 
 
 }
 
@@ -522,7 +531,7 @@ nav ul li a:hover {
 
     width: 100%;
     height: 700px;
-    border: 1px solid;
+
     position: relative;
     text-align: center;
 }
@@ -560,7 +569,7 @@ nav ul li a:hover {
     width: 50%;
     height: 50%;
     top: 20px;
-    border: 1px solid;
+
     position: absolute;
 
     left: 60px;
@@ -623,7 +632,7 @@ nav ul li a:hover {
     width: 100%;
     height: 300px;
     padding: 10% 0%;
-    border: 1px solid;
+
 
 }
 
@@ -676,19 +685,24 @@ nav ul li a:hover {
 
 .link {
     width: 100%;
-    height: 100%;
+    height: 80%;
     padding-top: 50px;
+    padding-bottom: 40px;
     text-align: center;
 
 }
 
 .footer {
+    background-color: hotpink;
     color: #ffffff;
     width: 100%;
     text-align: center;
-    padding-top: 200px;
+    padding-top: 20px;
     font-size: 10px;
     letter-spacing: 0.2em;
+}
+.footer_text{
+    height: 30px;
 }
 
 
@@ -709,7 +723,7 @@ nav ul li a:hover {
         height: 254px;
 
         /*    この線はpositionの仕組みをわかりやすくするための線*/
-        border: 1px solid;
+
 
         /*    親要素をrerativeにして基準にする*/
         position: absolute;
@@ -885,14 +899,14 @@ nav ul li a:hover {
     #intro {
         width: 100%;
         height: 1800px;
-        border: 1px solid;
+
         position: relative;
     }
 
     .tools {
         width: 100%;
         height: 555px;
-        border: 1px solid;
+
         position: relative;
         text-align: center;
     }
@@ -1047,7 +1061,7 @@ display: none;
     }
     
     #create{
-        height: 500px;
+        height: 700px;
     }
     .img_create{
         height: 150%;
@@ -1075,8 +1089,16 @@ display: none;
     }
     
     .footer{
-        top: 100px;
-    }
+    color: #ffffff;
+    width: 100%;
+        height: 0px;
+    text-align: center;
+    padding-top: 40px;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+}
+    
+    
     
    
 
