@@ -8,9 +8,15 @@
     <title>eizotoha</title>
 <link rel="icon" href="image/favicon.ico">
     <link rel="stylesheet" href="style.css">
+    
+<!--modal css-->
+    <link href="modal.css" rel="stylesheet">
+<!--modal css-->
+
 
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
+    <script type="text/javascript" src="modal.js"></script>
 </head>
 
 
@@ -63,13 +69,27 @@
             <h2 class="charth2">00</h2>
             <p class="chartp">chart</p>
             <img src="image/chart.png" class="image_chart">
-          <div  class="chart_botton">
+          <div id="modal-open"  class="chart_botton">
                 <a class="button-link chart_a">診断する</a>
                </div></div>
 
            
 
         </div>
+        
+        <!-- ここからモーダルウィンドウ -->
+<div id="modal-content">
+	<!-- モーダルウィンドウのコンテンツ開始 -->
+	<img src="image/modaru.png" width="100%">
+	<p>自分のタイプが分かったかな?記事を見て確認しよう！</p>
+	<p><a id="modal-close" class="button-link">閉じる</a></p>
+	<!-- モーダルウィンドウのコンテンツ終了 -->
+</div>
+
+
+<!-- ここまでモーダルウィンドウ -->
+
+
 
 
     <div class="kaijo"></div>
@@ -337,6 +357,10 @@
     </div>
 
     
+<!-- JavaScriptの読み込み -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="modal.js"></script>
+
 
 
 </body></html>

@@ -37,7 +37,9 @@
 
 
 #modalBtn{
-    z-index: 10;
+    position: relative;
+    top:100px;
+    z-index: 1;
 }
 
 
@@ -692,12 +694,12 @@ nav ul li a:hover {
 
 }
 
-.footer {
-    background-color: hotpink;
+.footer_text {
+  
     color: #ffffff;
     width: 100%;
     text-align: center;
-    padding-top: 20px;
+    margin-top: 320px;
     font-size: 10px;
     letter-spacing: 0.2em;
 }
@@ -1061,10 +1063,10 @@ display: none;
     }
     
     #create{
-        height: 700px;
+        height: 800px;
     }
     .img_create{
-        height: 150%;
+        height: 101%;
     }
     
     
@@ -1088,14 +1090,24 @@ display: none;
         height: 40%;
     }
     
-    .footer{
+.link {
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+
+    text-align: center;
+
+}
+    
+    .footer_text{
     color: #ffffff;
     width: 100%;
-        height: 0px;
+    height: 0px;
     text-align: center;
     padding-top: 40px;
     font-size: 10px;
     letter-spacing: 0.2em;
+          margin-top: 0px;
 }
     
     
